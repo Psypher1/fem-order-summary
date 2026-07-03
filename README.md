@@ -17,11 +17,11 @@ This is a solution to the [NFT preview card component challenge on Frontend Ment
 
 ### Screenshot
 
-![my solution](./preview.pn)
+![my solution](./preview.png)
 
 ### Links
 
-- Solution URL: [Solution repo](https://github.com/Psypher1/fem-nft-card-component)
+- Solution URL: [Solution repo](https://github.com/Psypher1/fem-order-summary)
 - Live Site URL: [live solution](https://psypher1.github.io/fem-nft-card-component/)
 
 ## My process
