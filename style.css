@@ -141,10 +141,27 @@ h3 {
 }
 h3 {
 	font-size: var(--fs-700);
+	font-weight: var(--fw-900);
 	color: var(--clr-neutral-800);
 }
 
 /* COMPOSITION */
+/* .flow > * + *  */
+/* .flow > :not(:first-child) - has higher specificiy*/
+.flow > :where(:not(:first-child)) {
+	margin-block-start: var(--flow-spacer, 1em);
+}
+
+.grid-flow {
+	display: grid;
+	gap: var(--gap, 1rem);
+}
+
+.flex-row {
+	display: flex;
+	gap: var(--gap, 1rem);
+}
+
 /* UTILITY */
 .p-24 {
 	padding: 1.5rem;
@@ -179,8 +196,42 @@ h3 {
 .text-right {
 	text-align: end;
 }
+
+.fw-bold {
+	font-weight: var(--fw-700);
+}
+.fw-black {
+	font-weight: var(--fw-900);
+}
+
+.br-1 {
+	border-radius: 0.5rem;
+}
+
+.br-2 {
+	border-radius: 1rem;
+}
+
+.btn {
+	cursor: pointer;
+	color: var(--clr-neutral-100);
+	font-weight: var(--fw-700);
+	background: var(--clr-primary-400);
+	padding: 1em 2em;
+	text-decoration: none;
+	border-radius: 0.5rem;
+	border: 0;
+}
+
+.btn:hover,
+.btn:focus {
+	background: var(--clr-primary-300);
+}
+.link {
+}
 /* BLOCK */
 .card {
-	max-width: 30rem;
+	max-width: 25rem;
+	overflow: hidden;
 }
 /* EXECPTION */
